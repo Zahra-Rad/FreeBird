@@ -17,7 +17,7 @@
 }
 
 body {
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg.png), linear-gradient(#e8e5dc, #e8e5dc);
   background-size: 200px, auto;
 }
 
@@ -39,10 +39,61 @@ body {
   color: #e36852;
 }
 
+.menu {
+  width: 44px;
+  right: 30px;
+}
+
 .menu-hover > img {
   transform: rotate(0);
   transition: 0.2s ease-in-out !important;
 }
 .menu-hover:hover > img {
   transform: rotate(180deg);
+}
+
+.hero ~ img {
+  opacity: 0.25;
+  right: 50%;
+  transform: translateX(50%);
+  width: 500px;
+  top: 25%;
+}
+.hero > h1 {
+  font-size: 45px;
+  letter-spacing: 1.5px;
+}
+
+.top-socials > a > span {
+  transition: 0.2s ease-in-out !important;
+}
+.top-socials > a:hover > span {
+  color: #e36852;
+}
+
+.freeBird {
+  width: 500px;
+  padding-top: 25%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero ~ img {
+    width: 750px;
+    top: 10dvh;
+  }
+  .freeBird {
+    max-width: 700px;
+    width: 100%;
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero ~ img {
+    width: 1200px;
+  }
+  .freeBird {
+    max-width: 686px;
+    width: 100%;
+    padding-top: 100px;
+  }
 }/*# sourceMappingURL=master.css.map */
