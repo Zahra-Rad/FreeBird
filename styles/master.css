@@ -72,7 +72,8 @@ body {
 }
 
 .freeBird {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   padding-top: 25%;
 }
 
