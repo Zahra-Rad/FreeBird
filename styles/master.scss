@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Archivo-Bold";
+  src: url("../font/Archivo-Bold.woff");
+}
+@font-face {
+  font-family: "Archivo-Regular";
+  src: url("../font/Archivo-Regular.woff");
+}
+@font-face {
+  font-family: "Heritage";
+  src: url("../font/Heritage_Sans_Alternates.woff");
+}
+$primary-color: #243746;
+$secondary-color: #e36852;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../img/bg.png);
+  background-size: 200px, auto;
+}
+.heritage {
+  font-family: "Heritage", sans-serif;
+}
+.pColor {
+  color: $primary-color;
+}
+.navBird-hover {
+  > * {
+    transition: 0.2s ease-in-out !important;
+  }
+  &:hover {
+    > img {
+      margin-bottom: 35px !important;
+    }
+    > figcaption {
+      color: $secondary-color;
+    }
+  }
+}
+.menu-hover {
+  > img {
+    transform: rotate(0);
+    transition: 0.2s ease-in-out !important;
+  }
+  &:hover {
+    > img {
+      transform: rotate(180deg);
+    }
+  }
+}

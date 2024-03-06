@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Archivo-Bold";
+  src: url("../font/Archivo-Bold.woff");
+}
+@font-face {
+  font-family: "Archivo-Regular";
+  src: url("../font/Archivo-Regular.woff");
+}
+@font-face {
+  font-family: "Heritage";
+  src: url("../font/Heritage_Sans_Alternates.woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/bg.png);
+  background-size: 200px, auto;
+}
+
+.heritage {
+  font-family: "Heritage", sans-serif;
+}
+
+.pColor {
+  color: #243746;
+}
+
+.navBird-hover > * {
+  transition: 0.2s ease-in-out !important;
+}
+.navBird-hover:hover > img {
+  margin-bottom: 35px !important;
+}
+.navBird-hover:hover > figcaption {
+  color: #e36852;
+}
+
+.menu-hover > img {
+  transform: rotate(0);
+  transition: 0.2s ease-in-out !important;
+}
+.menu-hover:hover > img {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=master.css.map */
