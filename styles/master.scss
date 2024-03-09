@@ -14,6 +14,16 @@ $primary-color: #243746;
 $secondary-color: #e36852;
 $extraColor: #e5e3da;
 $hColor: #7da0a6;
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: $extraColor;
+}
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 5px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -226,29 +236,19 @@ footer {
     }
   }
 }
-.logo {
-  width: 150px;
-  height: 150px;
-  position: fixed;
-  bottom: 20px;
+.zahra {
+  width: 90px;
+  height: 90px;
+  bottom: 40px;
   right: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   > p {
-    position: absolute;
-    top: 150px;
-    font-family: $primaryFont;
+    top: 90px;
+    width: 100px;
     font-weight: 200;
-    color: $secondaryColor;
+    color: $primary-color;
     line-height: 10px;
-    display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
     font-size: 12px;
-    left: 50%;
     transform: translateX(-50%) rotate(90deg);
     transform-origin: right;
     > strong {
@@ -257,49 +257,29 @@ footer {
     }
   }
   > div {
-    width: 100%;
-    height: 100%;
-    background-color: $primaryColor;
+    background-color: $primary-color;
     border-radius: 33% 67% 32% 68% / 32% 28% 72% 68%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     animation: format 10s ease-in-out infinite alternate;
     > figure {
       width: 95%;
       height: 95%;
       // overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
       cursor: pointer;
       > img {
+        z-index: 15;
         animation: format2 10s ease-in-out infinite alternate;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
       }
       > figcaption {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         > a {
-          text-decoration: none;
-          color: $primaryColor;
-          font-weight: bolder;
-          font-size: 18px;
+          z-index: 10 !important;
+          color: $primary-color;
+          font-size: 12px;
           width: 60px;
-          height: 30px;
+          height: 20px;
           transform: translateX(0) translateY(0);
           transition: all 0.5s ease-in-out;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           &:nth-of-type(1) {
-            transition-delay: 0;
+            transition-delay: 0s;
           }
           &:nth-of-type(2) {
             transition-delay: 0.2s;
@@ -315,8 +295,8 @@ footer {
       &:hover {
         > figcaption {
           > a {
-            transform: translateX(-100px) translateY(0);
-            color: $secondaryColor;
+            transform: translateX(-70px) translateY(0);
+            color: $secondary-color;
           }
         }
       }
@@ -375,6 +355,31 @@ footer {
   }
   .c2 {
     bottom: -20%;
+  }
+  .zahra {
+    width: 120px;
+    height: 120px;
+    > p {
+      top: 120px;
+      width: 140px;
+    }
+    > div {
+      > figure {
+        > figcaption {
+          a {
+            font-size: 16px !important;
+            height: 28px !important;
+          }
+        }
+        &:hover {
+          > figcaption {
+            > a {
+              transform: translateX(-80px) translateY(0);
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -441,6 +446,31 @@ footer {
     }
     &::after {
       right: -15%;
+    }
+  }
+  .zahra {
+    width: 150px;
+    height: 150px;
+    > p {
+      top: 150px;
+      width: 160px;
+    }
+    > div {
+      > figure {
+        > figcaption {
+          a {
+            font-size: 18px !important;
+            height: 35px !important;
+          }
+        }
+        &:hover {
+          > figcaption {
+            > a {
+              transform: translateX(-90px) translateY(0);
+            }
+          }
+        }
+      }
     }
   }
 }
