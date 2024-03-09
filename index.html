@@ -16,7 +16,7 @@
         <div class="row">
             <aside
                 class="d-none d-md-flex col-1 border border-dark h-100 py-5 px-xl-3 justify-content-between flex-column position-fixed align-items-center flex-wrap z-2">
-                <figure class="w-75 d-flex justify-content-center mt-0 mt-lg-4 menu-hover">
+                <figure class="w-75 d-flex justify-content-center mt-0 mt-lg-4 menu-hover" id="lg-button">
                     <img src="img/menu.svg" alt="" class="">
                 </figure>
                 <figure class="w-100 navBird-hover">
@@ -28,7 +28,9 @@
             </aside>
             <main class="col-12 col-md-11 position-absolute top-0 end-0">
                 <div class="hero">
-                    <figure class="position-absolute d-flex d-md-none justify-content-center mt-5 menu menu-hover">
+                    <figure
+                        class="position-fixed position-sm-absolute d-flex d-md-none justify-content-center mt-5 menu menu-hover"
+                        id="sm-menu">
                         <img src="img/menu.svg" alt="" class="">
                     </figure>
                     <div class="top-socials d-none d-md-flex position-absolute top-0
@@ -324,6 +326,44 @@
                     </div>
                 </footer>
                 <img src="img/hero.webp" alt="" class="position-absolute z-n1">
+                <div class="sm-nav position-fixed start-0" id="menu">
+                    <a href="" class="w-25 d-flex justify-content-center align-content-center mx-auto">
+                        <img src="img/freeBird.svg" alt="" class="w-100 object-fit-cover">
+                    </a>
+                    <nav class="container w-100">
+                        <ul class="list-unstyled row w-100">
+                            <li class="w-100 ps-5">
+                                <a href="" class="text-decoration-none pColor heritage text-uppercase fs-1">BOOK NOW</a>
+                            </li>
+                            <li class="w-100 ps-5">
+                                <a href="" class="text-decoration-none pColor heritage text-uppercase fs-1">Specials</a>
+                            </li>
+                            <li class="w-100 ps-5">
+                                <a href="" class="text-decoration-none pColor heritage text-uppercase fs-1">THE VIBE
+                                    GALLERY</a>
+                            </li>
+                            <li class="w-100 ps-5">
+                                <a href=""
+                                    class="text-decoration-none pColor heritage text-uppercase fs-1">Accommodations</a>
+                            </li>
+                            <li class="w-100 ps-5">
+                                <a href="" class="text-decoration-none pColor heritage text-uppercase fs-1">The Local
+                                    Scene</a>
+                            </li>
+                            <li class="w-100 ps-5">
+                                <a href="" class="text-decoration-none pColor heritage text-uppercase fs-1">Hotel
+                                    Amenities</a>
+                            </li>
+                            <li class="w-100 ps-5">
+                                <a href="" class="text-decoration-none pColor heritage text-uppercase fs-1">our blog</a>
+                            </li>
+                            <li class="w-100 ps-5">
+                                <a href="" class="text-decoration-none pColor heritage text-uppercase fs-1">Contact
+                                    US</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </main>
         </div>
     </div>
@@ -349,6 +389,7 @@
         </div>
     </div>
     <script src="js/bootstrap.min.js"> </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

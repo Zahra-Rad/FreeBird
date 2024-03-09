@@ -54,6 +54,39 @@ body {
 .hColor {
   color: $hColor;
 }
+#sm-menu {
+  border-radius: 50%;
+  z-index: 99 !important;
+  background: $extraColor;
+}
+.sm-nav {
+  top: -100%;
+  width: 100vw;
+  height: 100vh;
+  background: $extraColor;
+  transition: 1s !important;
+  > a {
+    margin-top: 8vh;
+  }
+  > nav {
+    > ul {
+      > li {
+        margin-top: 1.5vh !important;
+        > a {
+          transition: 0.2s ease-in-out !important;
+        }
+        &:hover {
+          > a {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}
+.active {
+  top: 0%;
+}
 .navBird-hover {
   > * {
     transition: 0.2s ease-in-out !important;
@@ -381,6 +414,23 @@ footer {
       }
     }
   }
+  .sm-nav {
+    > a {
+      margin-top: 5vh;
+      width: 130px !important;
+    }
+    > nav {
+      > ul {
+        > li {
+          margin-top: 1.5vh !important;
+          margin-left: 3% !important;
+        }
+      }
+    }
+  }
+}
+.active {
+  top: 0%;
 }
 
 // lg
@@ -472,6 +522,50 @@ footer {
         }
       }
     }
+  }
+  .sm-nav {
+    width: 30% !important;
+    > a {
+      margin-top: 8vh;
+      margin-left: calc(30% + 40px) !important;
+    }
+    > nav {
+      > ul {
+        > li {
+          margin-top: 2vh !important;
+          margin-left: 5vw !important;
+          > a {
+            font-size: 30px !important;
+          }
+        }
+      }
+    }
+  }
+}
+.active {
+  top: 0%;
+}
+
+@media screen and (min-width: 1200px) {
+  .sm-nav {
+    > a {
+      margin-top: 8vh;
+      margin-left: calc(30% + 65px) !important;
+    }
+    > nav {
+      > ul {
+        > li {
+          margin-top: 2vh !important;
+          margin-left: 8vw !important;
+          > a {
+            font-size: 30px !important;
+          }
+        }
+      }
+    }
+  }
+  .active {
+    top: 0%;
   }
 }
 
