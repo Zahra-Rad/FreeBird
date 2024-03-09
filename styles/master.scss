@@ -102,7 +102,7 @@ body {
 }
 .menu {
   width: 44px;
-  right: 30px;
+  right: 80px;
 }
 .menu-hover {
   > img {
@@ -273,7 +273,7 @@ footer {
   width: 90px;
   height: 90px;
   bottom: 40px;
-  right: 40px;
+  right: 80px;
   > p {
     top: 90px;
     width: 100px;
@@ -370,7 +370,14 @@ footer {
     border-radius: 68% 32% 59% 41% / 63% 60% 40% 37%;
   }
 }
-
+@media screen and (min-width: 576px){
+  .zahra{
+    right: 40px;
+  }
+  .menu{
+    right: 30px;
+  }
+}
 // md
 @media screen and (min-width: 768px) {
   .hero ~ img {
