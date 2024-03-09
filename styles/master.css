@@ -251,7 +251,7 @@ footer ul > li > a:hover {
 }
 
 .logos {
-  gap: 40px;
+  gap: 20px;
   align-content: center;
 }
 .logos > img {
@@ -260,11 +260,11 @@ footer ul > li > a:hover {
      object-fit: contain;
 }
 .logos > img:nth-of-type(1) {
-  max-width: 160px;
+  max-width: 140px;
 }
 .logos > img:nth-of-type(2) {
   width: auto;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .cRight > a {
